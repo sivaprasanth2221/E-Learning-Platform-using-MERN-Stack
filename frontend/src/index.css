@@ -1,0 +1,92 @@
+* {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 10px;
+}
+
+:root {
+  --color-bg: #f9f3f3; /* Light pink background */
+  --color-bg-variant: #ffe8e8; /* Lighter shade for variants */
+  --color-primary: #ff6b6b; /* Coral color */
+  --color-primary-variant: rgba(255, 107, 107, 0.6); /* Semi-transparent coral */
+  --color-light: rgba(255, 255, 255, 0.8);
+}
+
+.registerTitle {
+  font-size: 40px;
+  color: var(--color-primary); /* Coral title */
+}
+
+.registerForm > label {
+  margin: 8px 0;
+  color: var(--color-primary); /* Coral labels */
+}
+
+.registerInput {
+  width: 80%;
+  padding: 12px;
+  margin-bottom: 15px;
+  background-color: var(--color-bg-variant);
+  border: 2px solid var(--color-primary-variant);
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.registerInput:focus {
+  border-color: var(--color-primary); /* Focus border color */
+  outline: none;
+}
+
+.registerButton {
+  width: 80%;
+  cursor: pointer;
+  background-color: var(--color-primary); /* Coral button */
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.registerButton:hover {
+  background-color: var(--color-primary-variant); /* Darker on hover */
+}
+
+
+@media screen and (max-width: 480px) {
+  .register {
+    padding: 20px;
+  }
+
+  .registerInput,
+  .registerButton {
+    width: 100%;
+  }
+
+  .registerInput {
+    font-size: 16px;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  .registerButton {
+    padding: 15px;
+  }
+}
